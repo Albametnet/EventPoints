@@ -77,7 +77,7 @@ for one_event in one_by_oneevent:
 		currentEvent["target_url"] = event_url['href']
 		currentEvent["source"]["event_url"] = event_url['href']
 		currentEvent["abstract"] = abstract.text
-		currentEvent["abstract-details"] = abstract.text
+		currentEvent["abstract_details"] = abstract.text
 	
 	jsonfinal.append(currentEvent)
 print (jsonfinal)
