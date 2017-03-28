@@ -53,7 +53,7 @@ if request.getcode() == 200:
                 requestCurrentEvent = urlopen(currentEvent["source"]["event_url"])
                 if requestCurrentEvent.getcode() == 200:
                     
-                    print("Estado actual:", currentEvent["source"]["event_url"])
+                    #print("Estado actual:", currentEvent["source"]["event_url"])
                     
                     currentEventSoup = BeautifulSoup(requestCurrentEvent, "html.parser")
                     priceRaw = currentEventSoup.find("div", {"class": "js-display-price"})
@@ -97,7 +97,7 @@ else:
     print("Error con la petición.")
 
 text_file = open("output/eventbrite.json", "w")
-print("Guardado... en eventbrite.json")
+#print("Guardado... en eventbrite.json")
 text_file.write(json.dumps(eventList, sort_keys=True, ensure_ascii=False, indent=4))
 text_file.close()
 
