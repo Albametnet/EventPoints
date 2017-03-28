@@ -43,7 +43,7 @@ for page in eventsList:
 #take information from each event
 for one_event in one_by_oneevent:
 	currentEvent = {
-				"location": {"name": "MediaLab Prado","notes": False, "lng": ,"lat": 40.411321},
+				"location": {"name": "MediaLab Prado","notes": False, "lng": -3.693456,"lat": 40.411321},
 				"price": {
 				"isFree": True,
 						"isTrusted": False,
@@ -86,15 +86,3 @@ text_file = open("output/media-lab-prado.json", "w")
 print("Guardado... en medialab.json")
 text_file.write(json.dumps(jsonfinal, sort_keys=True, ensure_ascii=False, indent=4))
 text_file.close()
-					
-
-
-	
-	
-
-	
-	
-	
-	
-
-
