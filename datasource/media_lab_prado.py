@@ -43,13 +43,13 @@ for page in eventsList:
 #take information from each event
 for one_event in one_by_oneevent:
 	currentEvent = {
-				"location": {"name": "MediaLab Prado","notes": False, "lng": 40.411321,"lat": -3.693456},
+				"location": {"name": "MediaLab Prado","notes": False, "lng": ,"lat": 40.411321},
 				"price": {
 				"isFree": True,
 						"isTrusted": False,
 						"details": "estimado"
 				},
-				"location": {"name": "MediaLab Prado","lng": 40.411321,"lat": -3.693456},
+				"location": {"name": "MediaLab Prado","lng": -3.693456,"lat": 40.411321},
 				"source": {
 					"name": "MediaLab Prado",
 					"logo": "http://blogs.medialab-prado.es/streamlab/wp-content/uploads/sites/28/2016/01/00_logo-medialab-madrid.jpg",
